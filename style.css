@@ -1,0 +1,80 @@
+:root {
+    --solar-green: #2d5a27;
+    --solar-clay: #d97706;
+    --solar-beige: #fdfaf3;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--solar-beige);
+    color: #1a2e1a;
+}
+
+h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(45, 90, 39, 0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+#filter-container::-webkit-scrollbar {
+    height: 4px;
+}
+
+#filter-container::-webkit-scrollbar-thumb {
+    background: rgba(45, 90, 39, 0.1);
+    border-radius: 10px;
+}
+
+body.senja-mode {
+    background-color: #1a2e1a;
+    color: #e2e8f0;
+}
+
+body.senja-mode .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f1f5f9;
+}
+
+body.senja-mode h1, body.senja-mode h2, body.senja-mode h3 {
+    color: #86efac;
+}
+
+body.senja-mode #search-input {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.senja-mode .filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #94a3b8;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-panel {
+    transform: scale(0.95);
+}
+
+.modal-panel.scale-100 {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+}

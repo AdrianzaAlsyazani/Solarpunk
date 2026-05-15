@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarpunk Almanac | Menuju Transisi Peradaban</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+    <nav class="p-6 flex flex-col md:flex-row items-center justify-between sticky top-0 bg-[#fdfaf3]/80 backdrop-blur-md z-50 gap-4 md:gap-0">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold">S</div>
+            <span class="font-semibold tracking-tight text-xl">SolarAlmanac</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="space-x-6 hidden md:block">
+                <a href="#" class="hover:text-amber-600 transition">Pustaka</a>
+                <a href="#" class="hover:text-amber-600 transition">Manifesto</a>
+                <button class="bg-emerald-800 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition">Kontribusi</button>
+            </div>
+            <button id="mood-toggle" class="p-3 rounded-full bg-amber-100 text-amber-800 hover:bg-amber-200 transition-all duration-500" aria-label="Ubah mode tampilan">
+                <span id="mood-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-7xl mb-6 text-emerald-900">Mendaur Ulang Masa Depan.</h1>
+        <p class="text-xl text-gray-600 leading-relaxed">Daftar alternatif desentralisasi untuk mengganti fungsi produksi kapitalisme dengan kearifan alam dan teknologi tepat guna.</p>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 mb-12">
+        <div class="flex flex-col md:flex-row gap-4 items-center justify-between bg-white/40 p-2 rounded-[2.5rem] border border-emerald-900/5 backdrop-blur-md">
+            <div class="relative flex-1 w-full">
+                <input type="text" id="search-input" placeholder="Cari alternatif..."
+                    class="w-full bg-transparent px-6 py-3 focus:outline-none text-emerald-900 font-medium" aria-label="Cari artikel solarpunk">
+            </div>
+
+            <button id="toggle-filter" class="bg-emerald-900 text-white px-8 py-3 rounded-full flex items-center gap-2 hover:bg-emerald-800 transition-all shadow-lg shadow-emerald-900/20"
+                aria-controls="filter-drawer" aria-expanded="false">
+                <span>Kategori</span>
+                <svg id="toggle-icon" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+        </div>
+
+        <div id="filter-drawer" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+            <div class="flex flex-wrap gap-3 py-6 justify-center" id="filter-container">
+                <button class="filter-btn active px-6 py-2 rounded-full border border-emerald-900/10 transition-all bg-emerald-900 text-white shadow-md" data-category="all" aria-pressed="true">Semua</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Sanitasi" aria-pressed="false">Sanitasi</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Pangan" aria-pressed="false">Pangan</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Energi" aria-pressed="false">Energi</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Sosial" aria-pressed="false">Sosial</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Konstruksi" aria-pressed="false">Konstruksi</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-emerald-900/10 hover:bg-emerald-50" data-category="Teknologi" aria-pressed="false">Teknologi</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+        <div id="article-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </main>
+
+    <footer class="border-t border-emerald-900/10 py-10 text-center text-gray-500">
+        <p>Dicetak secara digital di atas awan. 2026 Solarpunk Movement.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
