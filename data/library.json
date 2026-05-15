@@ -29,6 +29,26 @@
         "how_to": "Kumpulkan sisa makanan dan limbah taman, campur dengan tanah, dan biarkan terurai selama beberapa minggu.",
         "impact": "Mengurangi limbah organik dan memperkaya tanah tanpa bahan kimia.",
         "tag": "Sustainable"
+    },
+    {
+        "id": "biogas",
+        "title": "Biogas: Energi Terbarukan dari Limbah",
+        "category": "Energi",
+        "description": "Gas yang dihasilkan dari fermentasi anaerobik limbah organik, digunakan sebagai sumber energi.",
+        "replacement": "Bahan Bakar Fosil",
+        "how_to": "Bangun digester biogas sederhana di rumah untuk mengolah limbah dapur dan kotoran hewan.",
+        "impact": "Mengurangi emisi gas rumah kaca dan menyediakan energi bersih untuk kebutuhan sehari-hari.",
+        "tag": "Renewable"
+    },
+    {
+        "id": "tanaman_obat",
+        "title": "Tanaman Obat: Solusi Alami untuk Kesehatan",
+        "category": "Kesehatan",
+        "description": "Tanaman yang digunakan untuk pengobatan tradisional, seperti kunyit, jahe, dan lidah buaya.",
+        "replacement": "Obat Kimia Sintetis",
+        "how_to": "Tanam tanaman obat di kebun rumah dan gunakan sesuai kebutuhan untuk pengobatan alami.",
+        "impact": "Mengurangi ketergantungan pada obat kimia dan mempromosikan kesehatan alami.",
+        "tag": "Natural"
     }
     
   ]
