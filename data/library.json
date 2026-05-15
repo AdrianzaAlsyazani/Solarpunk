@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "id": "lerak",
+      "title": "Lerak: Pembersih dari Hutan",
+      "category": "Sanitasi",
+      "description": "Buah yang mengandung saponin alami untuk mencuci pakaian tanpa merusak ekosistem air.",
+      "replacement": "Deterjen Kimia Berbasis Minyak Bumi",
+      "how_to": "Rendam 5-10 butir lerak dalam air hangat, atau rebus untuk mendapatkan ekstrak cair.",
+      "impact": "Mengurangi polusi air dan menggantikan deterjen kimia yang berbahaya.",
+      "tag": "Biodegradable"
+    },
+    {
+      "id": "permakultur",
+      "title": "Prinsip Permakultur",
+      "category": "Pangan",
+      "description": "Sistem desain ekologis yang meniru pola dan hubungan yang ditemukan di alam.",
+      "replacement": "Pertanian Monokultur Industri",
+      "how_to": "Mulai dengan observasi lahan, tangkap energi surya, dan jangan menghasilkan limbah.",
+      "impact": "Memulihkan kesuburan tanah dan meningkatkan ketahanan pangan lokal.",
+      "tag": "Ecosystem"
+    },
+    {
+        "id": "kompos",
+        "title": "Kompos: Daur Ulang Organik",
+        "category": "Pangan",
+        "description": "Proses penguraian bahan organik menjadi pupuk alami yang kaya nutrisi.",
+        "replacement": "Pupuk Kimia Sintetis",
+        "how_to": "Kumpulkan sisa makanan dan limbah taman, campur dengan tanah, dan biarkan terurai selama beberapa minggu.",
+        "impact": "Mengurangi limbah organik dan memperkaya tanah tanpa bahan kimia.",
+        "tag": "Sustainable"
+    }
+    
+  ]
+}
